@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calc</title>
+  <style>
+    body {
+      width: fit-content;
+      margin: 10vh auto;
+    }
+    input {
+      height: 30px;
+      widht: 100px;
+    }
+
+    select {
+      border: none;
+      font-size: 20px;
+    }
+
+    select:focus {
+      outline: none;
+    }
+
+    span {
+      background-color: #fff;
+      padding: 0 10px;
+      border: 1px solid #d2d2d2;
+    }
+  </style>
+</head>
+<body>
+  <input type="number" placeholder="请输入数字" id="number1" />
+  <br />
+  <select name="operator" id ="operator">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+  </select>
+  <br />
+  <input type="number" placeholder="请输入数字" id="number2" />
+  <br />
+  <button id="equl">=</button>
+  <br />
+  <span id="result"></span>
+  <script src="./calc.js"></script>
+</body>
+</html>
